@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>TIC TAC TOE</title>
+    <link rel="icon" type="image/png" href="favicon-icon.png">
+    <link rel="stylesheet" href="TTT.css">
+    <script src="TTT.js" type="text/javascript"></script>
+    <script src="../JavaScript/jquery-1.8.2.min.js"></script>
+</head>
+
+<body>
+    <div id="popup" class="hide">
+        <input type="text" id="ans">
+        <div id="new">
+            <center><input type="button" value="New Game" onclick="doNew();" class="btn"></center>
+        </div>
+    </div>
+    <div id="main">
+        <h1>
+            <center>TIC TAC TOE</center>
+        </h1>
+    </div>
+    <center>
+        <table border="0" width="450" height="450" style="text-align: center;font-family: cursive;font-size: 80px;" id="tab">
+            <tr>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="0" onfocus="blur()"></td>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="1" onfocus="blur()"></td>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="2" onfocus="blur()"></td>
+            </tr>
+            <tr>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="3" onfocus="blur()"></td>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="4" onfocus="blur()"></td>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="5" onfocus="blur()"></td>
+            </tr>
+            <tr>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="6" onfocus="blur()"></td>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="7" onfocus="blur()"></td>
+                <td width="150"><input type="text" class="txt" onclick="doplay(this);" id="8" onfocus="blur()"></td>
+            </tr>
+        </table>
+    </center>
+    <div align="center" id="btm">It is the turn of : <input type="text" id="person" value="Player-O"></div>
+    <div id="newbtn">
+        <center><input type="button" id="bbtn" class="btn" value="New Game" onclick="doNew();"></center>
+    </div>
+</body>
+
+</html>
